@@ -1,0 +1,29 @@
+{
+  "name": "universal-optimizer",
+  "version": "0.1.0",
+  "description": "Make games run faster with an AI agent, measured before and after: PC games in any engine, emulators, console/mobile/cloud settings, and the source code of games you develop in any language, Roblox Luau included.",
+  "author": {
+    "name": "GameRipper665",
+    "url": "https://github.com/GameRipper665"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "universal-optimizer",
+    "shortDescription": "Make any game run faster",
+    "developerName": "GameRipper665",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "This game stutters: find out why and fix it",
+      "Get me more FPS in this game without making it look much worse",
+      "Why does this game use so much RAM?"
+    ],
+    "websiteURL": "https://github.com/GameRipper665/universal-optimizer"
+  },
+  "homepage": "https://github.com/GameRipper665/universal-optimizer",
+  "repository": "https://github.com/GameRipper665/universal-optimizer"
+}

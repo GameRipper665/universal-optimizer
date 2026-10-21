@@ -1,0 +1,24 @@
+[project]
+name = "universal-optimizer"
+version = "0.1.0"
+description = "Tools and skills for AI agents that make PC games run faster: frame-time benchmarks, before/after comparisons, engine-aware optimization plans, process tuning."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "psutil>=5.9",
+    "universal-modder @ git+https://github.com/rehan-remade/universal-modder",
+]
+
+[project.scripts]
+uo = "uo.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["uo"]

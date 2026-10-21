@@ -1,0 +1,16 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "universal-optimizer",
+  "description": "Skills and tools for making PC games run faster with AI agents, measured before and after.",
+  "owner": {
+    "name": "GameRipper665",
+    "url": "https://github.com/GameRipper665"
+  },
+  "plugins": [
+    {
+      "name": "universal-optimizer",
+      "source": "./",
+      "description": "Make games run faster with an AI agent, measured before and after: PC games in any engine, emulators, console/mobile/cloud settings, and the source code of games you develop in any language, Roblox Luau included."
+    }
+  ]
+}
