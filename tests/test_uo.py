@@ -175,3 +175,8 @@ def test_levers_emulator_and_roblox():
     assert len(emu) == 2 and "DXVK" not in " ".join(emu)
     rbx = levers(dict(base, anti_cheat=["Hyperion (Roblox)"], special_lever="Roblox player side: ..."))
     assert rbx[0].startswith("ONLINE") and rbx[1].startswith("Roblox") and "DXVK" not in " ".join(rbx)
+
+
+def test_manifests_agree():
+    for f in ("plugin.json", "gemini-extension.json", ".claude-plugin/plugin.json", ".codex-plugin/plugin.json"):
+        assert json.loads((ROOT / f).read_text(encoding="utf-8"))["name"] == "universal-optimizer", f

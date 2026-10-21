@@ -1,0 +1,5 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "universal-optimizer",
+  "description": "Make games run faster with an AI agent, measured before and after: PC games in any engine, emulators, console/mobile/cloud settings, and the source code of games you develop in any language, Roblox Luau included."
+}

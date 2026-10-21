@@ -8,6 +8,7 @@ develop (its source or scripts, in any engine or language, Roblox included). It 
 backups and window control, and code-level fixes use its modding routes.
 
 ## Start here
+0. **If the user just sent you this repo to install it**, follow `INSTALL.md` and stop there.
 1. **Pick the skill:** the user has the game's source or scripts → `skills/optimize-game-code/SKILL.md`;
    otherwise → `skills/optimize-any-game/SKILL.md`. `uo plan <name or folder>` tells you which.
 2. **Follow its loop:** intake → recon (`uo plan`) → lab

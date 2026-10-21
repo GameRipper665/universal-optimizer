@@ -6,7 +6,7 @@
     uo compare before.json after.json [--json]
 
 Frame times come from PresentMon 2.x (https://github.com/GameTechDev/PresentMon/releases): put the console exe
-on PATH (any PresentMon*.exe) or set PRESENTMON. It uses ETW, so run from an elevated shell (or a user in
+(any PresentMon*.exe) in ~/.universal-optimizer/tools or on PATH, or set PRESENTMON. It uses ETW, so run from an elevated shell (or a user in
 "Performance Log Users"). Without it, bench still records CPU and memory and says so. The raw CSV is kept next
 to the JSON.
 
@@ -37,6 +37,7 @@ from pathlib import Path
 FRAME_COLUMNS = ("MsBetweenPresents", "frametime")
 GPU_COLUMNS = ("MsGPUBusy", "msGPUActive")
 NOISE_PCT = 3.0
+TOOLS_DIR = Path.home() / ".universal-optimizer" / "tools"
 
 
 def die(msg: str, code: int = 1):
@@ -159,7 +160,7 @@ def presentmon_exe(given: str | None) -> str | None:
     for c in (given, os.environ.get("PRESENTMON"), shutil.which("PresentMon")):
         if c and Path(c).is_file():
             return c
-    for d in os.environ.get("PATH", "").split(os.pathsep):
+    for d in [str(TOOLS_DIR), *os.environ.get("PATH", "").split(os.pathsep)]:
         hits = sorted(Path(d).glob("PresentMon*.exe")) if d and Path(d).is_dir() else []
         if hits:
             return str(hits[-1])
