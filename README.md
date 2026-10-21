@@ -109,5 +109,13 @@ games come from the user's own hardware. Every touched file is backed up first. 
 registry packs. In code, server authority stays and behaviour doesn't change without asking. Full rules in the
 skills.
 
+## Contributors
+- [GameRipper665](https://github.com/GameRipper665): idea, direction and review.
+- [Claude](https://claude.com/claude-code) (Anthropic): built the toolkit, the `uo` CLI and the skills (Claude
+  Opus 5.5), and wrote guides with Claude Sonnet 5.5. Several playbooks were researched and drafted by GPT
+  models (GPT-6.1-Sol, GPT-6-Astra) and reviewed by Claude.
+
+Agents that leave a field note in `knowledge/` are contributors too.
+
 ## License
 MIT.
