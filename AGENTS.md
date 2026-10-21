@@ -1,8 +1,8 @@
 # universal-optimizer
 
-A game-optimization toolkit for AI coding agents (Claude Code, Codex, Cursor, Gemini CLI, Copilot, OpenCode and
-anything that reads `AGENTS.md`). When someone opens an agent here, they almost always want a game to **run
-faster or smoother**, measured: a game they play (PC, emulated, console/mobile/cloud settings) or a game they
+A game-optimization toolkit for AI coding agents (Claude Code, Codex, Grok Build, Antigravity, Cursor, Copilot,
+OpenCode and anything that reads `AGENTS.md`). When someone opens an agent here, they almost always want a game
+to **run faster or smoother**, measured: a game they play (PC, emulated, console/mobile/cloud settings) or a game they
 develop (its source or scripts, in any engine or language, Roblox included). It is a companion to
 [universal-modder](https://github.com/rehan-remade/universal-modder): `uo` depends on it for engine detection,
 backups and window control, and code-level fixes use its modding routes.

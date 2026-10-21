@@ -178,5 +178,5 @@ def test_levers_emulator_and_roblox():
 
 
 def test_manifests_agree():
-    for f in ("plugin.json", "gemini-extension.json", ".claude-plugin/plugin.json", ".codex-plugin/plugin.json"):
+    for f in ("plugin.json", ".claude-plugin/plugin.json", ".codex-plugin/plugin.json"):
         assert json.loads((ROOT / f).read_text(encoding="utf-8"))["name"] == "universal-optimizer", f

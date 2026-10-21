@@ -27,8 +27,8 @@ profiling down to the hot function and fixing it, in your own code or through a 
 
 ## Install
 
-**The easy way: let your agent do it.** Paste this into Claude Code, Codex, Grok Build, Antigravity, Gemini
-CLI, Cursor or any other coding agent:
+**The easy way: let your agent do it.** Paste this into Claude Code, Codex, Grok Build, Antigravity, Cursor
+or any other coding agent:
 
 ```text
 Install https://github.com/GameRipper665/universal-optimizer for yourself by following its INSTALL.md.
@@ -45,7 +45,6 @@ tells you what it did. [`INSTALL.md`](INSTALL.md) is written for agents, so you 
 | **Grok Build** | reads Claude Code plugins automatically; or `git clone https://github.com/GameRipper665/universal-optimizer ~/.grok/plugins/universal-optimizer` and enable it in `/plugins` |
 | **Antigravity** | `agy plugin install https://github.com/GameRipper665/universal-optimizer` |
 | **Codex** | `codex plugin marketplace add GameRipper665/universal-optimizer`, then `codex plugin add universal-optimizer@universal-optimizer` |
-| **Gemini CLI** | `gemini extensions install https://github.com/GameRipper665/universal-optimizer` |
 | **Skills only** (any agent) | `npx skills add https://github.com/GameRipper665/universal-optimizer` |
 | **Anything else** | `git clone https://github.com/GameRipper665/universal-optimizer` and start your agent inside it (`AGENTS.md`) |
 

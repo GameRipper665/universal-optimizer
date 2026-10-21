@@ -59,11 +59,6 @@ codex plugin marketplace add GameRipper665/universal-optimizer
 codex plugin add universal-optimizer@universal-optimizer
 ```
 
-**Gemini CLI**
-```bash
-gemini extensions install REPO
-```
-
 **Cursor, GitHub Copilot, OpenCode, or any other agent.** Clone the repo to `~/.universal-optimizer/repo` (or
 `git -C ~/.universal-optimizer/repo pull` if it's already there). Then copy `skills/optimize-any-game` and
 `skills/optimize-game-code` into the folder your agent loads skills from:
@@ -72,7 +67,7 @@ gemini extensions install REPO
 - `~/.claude/skills/`: Claude Code.
 
 If your agent has no skills support, tell the user to open their agent inside the clone instead: the repo's
-`AGENTS.md` (and `CLAUDE.md` / `GEMINI.md`) gives any agent the same instructions.
+`AGENTS.md` (and `CLAUDE.md`) gives any agent the same instructions.
 
 ## 4. Frame-time capture (Windows, optional; *ask* first)
 `uo bench` needs Intel's PresentMon console app for frame times. Ask the user if they want it. If yes, download
